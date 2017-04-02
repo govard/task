@@ -1,0 +1,525 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*fonts*/
+@font-face{
+font-family:Cicle Fina ;
+src:url(../fonts/Cicle Fina.ttf);
+}
+@font-face{
+font-family:Colobrate Thin ;
+src:url(../fonts/colaborate-thin.ttf);
+}
+@font-face{
+font-family:Colobrate Thin ;
+src:url(../fonts/colaborate-thin.ttf);
+}
+@font-face{
+font-family:Colobrate Regular ;
+src:url(../fonts/colaborate-regular.ttf);
+}
+@font-face{
+font-family:Colobrate Regular ;
+src:url(../fonts/colaborate-regular.ttf);
+}
+@font-face{
+font-family:HelvaticaLT UltraCompressed ;
+src:url(../fonts/helvetica-lt-ultra-compressed-58dd8d4881c29.ttf);
+}
+@font-face{
+font-family:Bebas ;
+src:url(../fonts/BebasRegular/BebasRegular.ttf);
+}
+@font-face{
+font-family:BebasBold ;
+src:url(../fonts/BebasBold/BebasBold.ttf);
+}
+@font-face {
+font-family: "CenturyGothicRegular";
+src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+/*===========================================*/
+
+/*styles*/
+body{
+background:url(../images/background.png) repeat
+}
+.wrapper{
+min-width:320px;
+max-width:1048px;
+margin:0 auto;
+}
+#header{
+margin-bottom: 35px;
+}
+.navigation_header{
+display:flex;
+justify-content:flex-end;
+overflow:hidden; 
+}
+.navigation_header  li{
+background: url(../images/aarow_toright_header.png) no-repeat ;
+background-position:0px 6px ;
+padding-left:10px;	
+margin-right:12px;
+}
+.navigation_header:first-child{
+background: none;
+}
+.navigation_header  li a{
+font-family:Cicle Fina ;
+color: #000;
+font-size:14pt; 
+text-decoration: none;	
+}
+.navigation_header .link{
+margin-top:77px;	
+}
+.link_home{
+margin-left: 140px;
+}
+.header_logo{
+margin-top: 47px;
+margin-right:131px;
+}
+.main_content{
+width:100%;
+background:#faa61a;
+}
+.main_content h1{
+font-family:HelvaticaLT UltraCompressed ;
+color: #000;
+font-size:90pt; 
+word-spacing:-10.9px;
+letter-spacing:-2px;
+margin: 0 55px;
+padding-top: 30px;
+padding-bottom:30px;
+text-align:center;
+}
+.content{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+justify-content:center;
+transition:.5s;
+}
+.first_column{
+letter-spacing:-0.36em;
+width: 632px;
+height: 364px;
+margin-left:45px;	
+display:flex;
+}
+.pand_img{
+position:relative;
+}
+.btn_play{
+position: absolute;
+bottom:145px;
+left:205px;
+}
+.first_inner_column{
+display:inline-block;
+vertical-align:top;
+letter-spacing:0;
+width:70%;
+}
+.second_inner_column{
+display:inline-block;
+color:#fff;
+letter-spacing:0;
+width:30%;
+padding-top: 25px;
+padding-left: 28px;
+background:#000;
+width: 205px;	
+height: 339px;	
+}
+.second_inner_column h3{
+padding: 0 3px;
+font-family:BebasBold;
+color:#000;
+background:#fff;
+display:inline-block;
+font-size:18px;
+margin-bottom:10px;
+}
+.second_inner_column p{
+margin-bottom:5px;
+font-family:Colobrate Thin;
+color:#fff ;
+overflow: hidden;
+font-size: 13pt;
+padding-left:15px;
+padding-right:10px;
+}
+.second_column{
+margin-right: 38px;
+width: 280px;	
+height:365px;
+background:#fff;
+position: relative;
+left:20px;
+}
+.second_column h3{
+font-family:BebasBold;
+color:#000;
+font-size:22pt; 
+padding-left:13px;
+padding-top: 5px;
+}
+.second_column p{
+font-family:Colobrate Regular;
+color:#900 ;
+font-size: 11.5pt; 
+padding:32px;
+padding-top: 10px;	
+line-height:1.5;
+}
+.btn_read_more{
+bottom: 20px;
+right: 15px;
+position: absolute;
+}
+#about_us{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin-bottom:60px;
+}
+.our_service{
+padding-left: 70px;
+}
+.our_service h2{
+font-family:BebasBold;
+color:#000;
+font-size:20.18pt;
+padding-bottom: 28px;
+padding-top: 	56px;
+}
+.our_service h2 span{
+font-family:BebasBold;
+color:#faa61a;
+font-size:20.18pt;
+text-align: center;
+}
+.our_service ul li{
+background:url(../images/arrow_list_item.png) no-repeat;
+font-family:Cicle Fine;
+font-size: 13pt;
+padding-left: 30px;
+padding-bottom: 15px;
+}
+.did_you_know{
+padding-left:70px;
+padding-right: 30px;
+}
+.did_you_know h2{
+font-family:BebasBold;
+color:#000;
+font-size:20.18pt;
+padding-top: 	56px;
+margin-bottom:26px;
+}
+.did_you_know h2 span{
+font-family:BebasBold;
+color:#faa61a;
+font-size:20.18pt;
+text-align: center;
+}
+.did_you_know p{
+font-family: Cicle Fina;
+font-size: 13pt;
+padding-bottom: 13px;
+overflow: hidden;
+width: 335px;
+line-height:1.5;
+}
+.contact{
+margin-right: 80px;
+padding: 0 0 0 70px;
+}
+.contact h2{
+font-family:BebasBold;
+color:#faa61a;
+font-size:20.18pt;
+padding-top: 	56px;
+margin-bottom:26px;
+padding-right: 75px;
+}
+.contact li {
+display:flex;
+color:#fff;
+background:#000;
+padding-top: 10px;
+flex-direction:column;
+font-size:13pt;
+}
+.contact .slick{
+margin: 0 0 5px 0 ;
+}
+#phone{
+font-family: BebasBold;
+margin-right: 25px;
+font-size: 14pt;
+padding-right: 14px;
+padding-bottom: 3px;
+padding-left: 3px;
+}
+.simple_fonts{
+font-family: Cicle Fina;
+margin-left: 14px;
+}
+.phone_row{
+display:flex;
+flex-direction:row;
+}
+#mobile_icon{
+position:relative;
+right: 25px;
+}
+.fax_row{
+display:inline-block;
+}
+.fax{
+position: relative;
+right: 32px;
+top: 33px;
+}
+#fax{
+font-family: BebasBold;
+margin-left: 11px;
+font-size: 14pt;
+padding-right: 14px;
+padding-bottom: 3px;
+padding-left: 12px;
+}
+.email{
+position: relative;
+right: 30px;
+top: 29px;
+}
+#read_me_btn{
+position: relative;
+left: 235px;
+top: 31px;
+}
+#email{
+font-family: Cicle Fina;
+margin-left: 14px
+}
+#home{
+font-family: Cicle Fina;
+margin-left: 14px;
+}
+.home{
+position: relative;
+right: 35px;
+top: 32px;
+}
+.our_clients h3{
+font-family:BebasBold;
+color:#000;
+font-size:20.18pt;
+padding-bottom: 28px;
+padding-top: 	56px;
+padding-left:70px;
+}
+.our_clients h3 span{
+font-family:BebasBold;
+color:#faa61a;
+font-size:20.18pt;
+text-align: center;
+}
+.our_clients h3{
+}
+.our_clients_bg{
+background:url(../images/clietns_bg.png) no-repeat 70px 0;
+height:118px;
+margin-bottom:100px;
+}
+#footer{
+padding-bottom:25px;
+}
+#footer ul{
+vertical-align:top;
+letter-spacing:-0.36em;
+text-align:right;
+}
+.border{
+border-bottom: 1px solid gray;
+width:70%;
+}
+#footer ul li{
+letter-spacing:0;
+display:inline-block;
+margin-right:20px;
+}
+#footer ul li a{
+font-family:Cicle Fina; 	
+color: #6b6b6b;
+font-size:10pt; 
+text-decoration:none;
+}
+#footer  p{
+margin: 11px 16px 0 0;
+text-align: right;
+font-family:CenturyGothicRegular;
+float:right;
+font-size:10pt;
+}
+.logo_footer{
+float:left;
+position: relative;
+bottom:14px;
+margin-right:10px;
+}
+.border{
+width: 832px;
+border-bottom:1px solid gray;
+float:right;
+}
+.contact_a{
+margin-right:0;
+}
+
+
+/*media*/
+@media screen and (max-width:1063px){
+.border{
+width:650px;
+transition:0.5s;
+}
+}
+@media screen and (max-width:885px){
+.border{
+width:550px;
+transition:0.5s;
+}
+}
+@media screen and (max-width:785px){
+.border{
+width:0;
+}
+#footer .link{
+margin-right:4px;
+text-decoration: underline;
+}
+}
+@media screen and (max-width:690px){
+.border{
+width:0;
+}
+}
+@media screen and (min-width:1050px){
+.header_logo{
+transition:0.7s;
+margin-right:90px;
+}
+}
+@media screen and (max-width:1050px ){
+.header_logo{
+margin-right:40px;
+transition:.7s;
+}
+@media screen and (max-width:900px ){
+.header_logo{
+margin-left:100px;
+transition:.7s;
+}
+}
+@media screen and (max-width:1052px)
+{
+.main_content h1{
+font-size:70pt;
+text-align:center;
+transition: .3s;
+word-spacing:-5px;
+letter-spacing:-1px;
+}
+}
+@media screen and (min-width:1052px)
+{
+.main_content h1
+{
+transition: .3s;
+}
+}
+@media screen and (max-width:805px)
+{
+.main_content h1{
+font-size:50pt;
+text-align:center;
+transition: .3s;
+}
+}
+@media screen and (max-width:791px)
+{
+.second_inner_column{
+position: relative;
+top: 364px;
+right: 165px;
+transition:0.5s;
+}
+}
+@media screen and (max-width:1015px)
+{
+.second_column{
+position: relative;
+left: -138px;
+transition:.7s;
+}
+}
+
+
+/*TODO
+1)пофикисть ферстчайлд в нав
+2)пофиксить в мейне  p
+
